@@ -28,3 +28,16 @@ ul {
     width: auto;
     height: 500px;
 }
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    background-color: blue;
+    width: auto;
+    height: 150px;
+    margin: 1rem;
+}
