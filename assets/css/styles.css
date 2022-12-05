@@ -1,0 +1,30 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+  background-color: aqua;
+  padding: 1rem
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+}
+
+.float-right {
+    float: right;
+    margin-right: 1rem;
+}
+
+.hero {
+    background-color: springgreen;
+    background-image: url("../images/doctor.png");
+    background-size: cover;
+    width: auto;
+    height: 500px;
+}
