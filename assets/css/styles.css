@@ -278,3 +278,99 @@ footer section article:first-of-type > div {
   width: auto;
   height: auto;
 }
+
+footer img {
+  width: 190px;
+}
+
+@media only screen and (max-width: 1354px) {
+  main section:nth-of-type(3) article:nth-child(3) {
+    width: 47%;
+  }
+
+  main section:nth-of-type(3) article:nth-child(4) {
+    width: 47%;
+  }
+
+  main section:nth-of-type(3) article:last-of-type {
+    width: 100%;
+  }
+
+  footer section article:first-of-type ul {
+    font-size: medium;
+  }
+
+  footer img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  nav {
+    margin-bottom: 1rem;
+  }
+
+  header li {
+    display: inline;
+    padding: 0 0.25rem;
+  }
+
+  header li a {
+    font-size: small;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  main section:nth-of-type(3) article:nth-child(3) {
+    width: 100%;
+  }
+
+  main section:nth-of-type(3) article:nth-child(4) {
+    width: 100%;
+  }
+
+  main section:nth-of-type(3) article:last-of-type {
+    width: 100%;
+  }
+
+  footer section article:first-of-type {
+    width: 100%;
+  }
+
+  footer section article:last-of-type {
+    width: 100%;
+  }
+
+  footer section article:first-of-type ul {
+    font-size: small;
+  }
+
+  footer section article:first-of-type h2 {
+    font-size: medium;
+  }
+
+  footer section article:last-of-type p {
+    font-size: small;
+  }
+
+  footer section article:last-of-type h3 {
+    font-size: medium;
+  }
+
+  footer img {
+    width: 80px;
+  }
+}
