@@ -8,12 +8,18 @@ nav {
   padding: 1rem;
 }
 
-li {
+header li {
   display: inline;
 }
 
-ul {
+header ul {
   list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: #2146c7;
+    font-size: larger;
 }
 
 .float-right {
@@ -54,28 +60,27 @@ ul {
   transform: translateY(-50%);
 }
 
-section {
+main section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-article {
-  background-color: blue;
+main article {
   height: auto;
   margin: 1rem;
   text-align: center;
   color: white;
 }
 
-section:first-of-type article {
-  background-color: rgb(81, 0, 255);
+main section:first-of-type article {
+  background-color: #2146c7;
   padding: 1rem;
   text-align: center;
   color: white;
 }
 
-section:first-of-type h2 {
+main section:first-of-type h2 {
   margin-bottom: 1rem;
 }
 
@@ -83,38 +88,38 @@ img {
   width: 350px;
 }
 
-section:nth-of-type(2) article {
+main section:nth-of-type(2) article {
   width: 350px;
   padding: 0.75rem;
   margin: 1rem 0;
   height: 210px;
 }
 
-section:nth-of-type(2) article:nth-child(even) {
+main section:nth-of-type(2) article:nth-child(even) {
   background-color: #009eff;
   cursor: pointer;
 }
 
-section:nth-of-type(2) article:nth-child(even):hover i {
+main section:nth-of-type(2) article:nth-child(even):hover i {
   background-color: #2146c7;
   transition: 2s;
 }
 
-section:nth-of-type(2) article:nth-child(odd) {
+main section:nth-of-type(2) article:nth-child(odd) {
   background-color: #2146c7;
   cursor: pointer;
 }
 
-section:nth-of-type(2) article:nth-child(odd):hover i {
+main section:nth-of-type(2) article:nth-child(odd):hover i {
   background-color: #009eff;
   transition: 2s;
 }
 
-section:nth-of-type(2) article h2 {
+main section:nth-of-type(2) article h2 {
   margin-bottom: 1rem;
 }
 
-i {
+main i {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   border-radius: 50%;
@@ -122,21 +127,25 @@ i {
   padding: 1rem;
 }
 
-section:nth-of-type(3) h2 {
+main section:nth-of-type(3) h2 {
   width: 100%;
   margin: 1rem;
 }
 
-section:nth-of-type(3) article {
-  width: 31.25%;
+main section:nth-of-type(3) article {
   height: 310px;
   display: flex;
   text-align: center;
   justify-content: center;
   position: relative;
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
 }
 
-section:nth-of-type(3) article p {
+main section:nth-of-type(3) article p {
   position: absolute;
   bottom: 0;
   padding: 0.25rem 0rem;
@@ -144,15 +153,15 @@ section:nth-of-type(3) article p {
   font-size: 1.05rem;
 }
 
-section:nth-of-type(3) article:nth-child(odd) p {
+main section:nth-of-type(3) article:nth-child(odd) p {
   background-color: #2146c7;
 }
 
-section:nth-of-type(3) article:nth-child(even) p {
+main section:nth-of-type(3) article:nth-child(even) p {
   background-color: #009eff;
 }
 
-section:nth-of-type(3) article:first-of-type {
+main section:nth-of-type(3) article:first-of-type {
   background-image: url("../images/MedicoCirujano.png");
   background-position: center;
   background-size: cover;
@@ -162,68 +171,56 @@ section:nth-of-type(3) article:first-of-type {
   text-align: center;
 }
 
-section:nth-of-type(3) article:nth-child(3) {
+main section:nth-of-type(3) article:nth-child(3) {
   background-image: url("../images/ServicioSocial.png");
   background-position: center;
   background-size: cover;
   justify-content: flex-start;
+  width: 480px;
 }
 
-section:nth-of-type(3) article:nth-child(4) {
+main section:nth-of-type(3) article:nth-child(4) {
   background-image: url("../images/Internado.png");
   background-position: center;
   background-size: cover;
   justify-content: center;
+  width: 480px;
 }
 
-section:nth-of-type(3) article:last-of-type {
+main section:nth-of-type(3) article:last-of-type {
   background-image: url("../images/Preparatoria.png");
   background-position: center;
   background-size: cover;
   justify-content: flex-start;
-  position: relative;
+  width: 480px;
 }
 
-section:nth-of-type(3) article {
-    position: relative;
-    cursor: pointer;
-  }
 
-section:nth-of-type(3) article::before {
-  position: absolute;
-  top: 0;
-  left: -45%;
-  z-index: 2;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
+main section:nth-of-type(3) article:hover {
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
 }
 
-section:nth-of-type(3) article:hover::before {
-  -webkit-animation: shine 0.75s;
-  animation: shine 0.75s;
+footer section{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
+footer section article{
+    text-align: left;
+    color: white;
 }
-@keyframes shine {
-  100% {
-    left: 125%;
-  }
+
+footer section article:first-of-type{
+    background-color: #2146c7;
+    width: 45%;
+    padding: 1rem 2rem;
+}
+
+footer section article:last-of-type{
+    background-color: #009eff;
+    width: 45%;
+    padding: 1rem 2rem;
 }
