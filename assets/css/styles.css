@@ -84,7 +84,7 @@ main section:first-of-type h2 {
   margin-bottom: 1rem;
 }
 
-img {
+main img {
   width: 230px;
 }
 
@@ -217,10 +217,13 @@ footer section article:first-of-type {
   width: 45%;
   padding: 1rem 2rem;
   border-top: white 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 footer section article:first-of-type ul{
-    font-size: large;
+    font-size: x-large;
   }
 
 footer section article:last-of-type {
@@ -232,4 +235,11 @@ footer section article:last-of-type {
 
 footer section article:last-of-type p {
   margin-bottom: 1rem;
+}
+
+
+footer section article:first-of-type > div {
+  margin-left: 2rem;
+  width: auto;
+  height: auto;
 }
