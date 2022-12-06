@@ -10,6 +10,7 @@ nav {
 
 header li {
   display: inline;
+  padding: 0 1rem;
 }
 
 header ul {
@@ -20,11 +21,16 @@ header li a {
   text-decoration: none;
   color: #2146c7;
   font-size: larger;
+  transition: 0.25s;
+}
+
+header li a:hover {
+  color: #009eff;
+  transition: 0.25s;
 }
 
 .float-right {
   float: right;
-  margin-right: 1rem;
 }
 
 .float-left {
@@ -33,31 +39,61 @@ header li a {
 }
 
 .hero {
-  position: relative;
   background-color: lightblue;
   background-image: url("../images/doctor.png");
   background-size: cover;
   width: auto;
   height: 500px;
+  display: block;
+  position: relative;
+}
+
+.hero article {
+  position: absolute;
+  top: 35%;
+  left: 2%;
 }
 
 .hero h1 {
-  margin-left: 1.7rem;
   font-size: 4rem;
-  position: absolute;
-  top: 40%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   color: #2146c7;
+  margin-bottom: 0.25rem;
 }
 
 .hero p {
-  margin-left: 2rem;
   font-size: 1.22rem;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-bottom: 0.5rem;
+}
+
+.hero button {
+  padding: 0.5rem 0.75rem;
+  border: #2146c7 solid 2px;
+  background-color: white;
+  border-radius: 0.25rem;
+  transition: 0.25s;
+  cursor: pointer;
+  color: #2146c7;
+}
+
+.hero button:hover {
+  padding: 0.5rem 0.75rem;
+  border: white solid 2px;
+  background-color: #2146c7;
+  transition: 0.25s;
+  cursor: pointer;
+  color: white;
+}
+
+.hero button a {
+  text-decoration: none;
+  color: inherit;
+  font-size: large;
+  transition: 0.25s;
+}
+
+.hero button a:hover {
+  color: inherit;
+  transition: 0.25s;
 }
 
 main section {
@@ -222,9 +258,9 @@ footer section article:first-of-type {
   justify-content: flex-start;
 }
 
-footer section article:first-of-type ul{
-    font-size: x-large;
-  }
+footer section article:first-of-type ul {
+  font-size: x-large;
+}
 
 footer section article:last-of-type {
   background-color: #009eff;
@@ -236,7 +272,6 @@ footer section article:last-of-type {
 footer section article:last-of-type p {
   margin-bottom: 1rem;
 }
-
 
 footer section article:first-of-type > div {
   margin-left: 2rem;
