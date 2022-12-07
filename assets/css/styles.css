@@ -58,6 +58,7 @@ header li a:hover {
   font-size: 4rem;
   color: #2146c7;
   margin-bottom: 0.25rem;
+  font-family: "Anton", sans-serif;
 }
 
 .hero p {
@@ -120,8 +121,13 @@ main section:first-of-type h2 {
   margin-bottom: 1rem;
 }
 
+main section:first-of-type p {
+  font-size: larger;
+}
+
 main img {
-  width: 230px;
+  width: 350px;
+  border: white solid 2px;
 }
 
 main section:nth-of-type(2) article {
@@ -179,6 +185,8 @@ main section:nth-of-type(3) article {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  border: grey 3px solid;
+  transition: 1s;
 }
 
 main section:nth-of-type(3) article p {
@@ -187,6 +195,16 @@ main section:nth-of-type(3) article p {
   padding: 0.25rem 0rem;
   width: 100%;
   font-size: 1.05rem;
+}
+
+main section:nth-of-type(3) article:nth-child(odd):hover {
+  border: #2146c7 solid 3px;
+  transition: 1s;
+}
+
+main section:nth-of-type(3) article:nth-child(even):hover {
+  border: #009eff solid 3px;
+  transition: 1s;
 }
 
 main section:nth-of-type(3) article:nth-child(odd) p {
@@ -212,7 +230,7 @@ main section:nth-of-type(3) article:nth-child(3) {
   background-position: center;
   background-size: cover;
   justify-content: flex-start;
-  width: 480px;
+  width: 470px;
 }
 
 main section:nth-of-type(3) article:nth-child(4) {
@@ -220,7 +238,7 @@ main section:nth-of-type(3) article:nth-child(4) {
   background-position: center;
   background-size: cover;
   justify-content: center;
-  width: 480px;
+  width: 470px;
 }
 
 main section:nth-of-type(3) article:last-of-type {
@@ -228,7 +246,7 @@ main section:nth-of-type(3) article:last-of-type {
   background-position: center;
   background-size: cover;
   justify-content: flex-start;
-  width: 480px;
+  width: 470px;
 }
 
 main section:nth-of-type(3) article:hover {
@@ -260,6 +278,7 @@ footer section article:first-of-type {
 
 footer section article:first-of-type ul {
   font-size: x-large;
+  list-style: none;
 }
 
 footer section article:last-of-type {
